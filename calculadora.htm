@@ -16,7 +16,10 @@ function raiz() {
   var num = document.getElementById("n1");
   num.value = Math.sqrt(num.value);
 }
-
+function cubo() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value * num.value;
+}
 </script>
 </head>
 <body>
@@ -25,6 +28,7 @@ function raiz() {
 
   <button onclick="cuadrado()"> x<sup>2</sup> </button>
   <button onclick="inverso()"> 1/x </button>
-  <button onclick="inverso()"> sqrt(x) </button>
+  <button onclick="raiz()"> sqrt(x) </button>
+  <button onclick="cubo()"> x<sup>3</sup> </button>
 </body>
 </html>
